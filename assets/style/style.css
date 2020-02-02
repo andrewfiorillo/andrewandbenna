@@ -231,7 +231,7 @@ label.selector {
   display: none;
 }
 
-@media only screen and (max-device-width: 800px) {
+@media (max-width: 800px) {
   #nav #nav-left,
 #nav #nav-right {
     display: flex;
@@ -258,6 +258,18 @@ label.selector {
 
   .main {
     margin-top: 170px;
+  }
+}
+@media (max-width: 491px) {
+  .hero-home {
+    height: auto;
+    padding-bottom: 100%;
+  }
+}
+@media (max-width: 370px) {
+  .hero-home h2 {
+    font-size: 10vw;
+    line-height: 1.35;
   }
 }
 
