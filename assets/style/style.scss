@@ -1,0 +1,254 @@
+@import "reset.css";
+
+$color-base: #222222;
+$color-display: #000000;
+$color-highlight: #30C3BB;
+$color-border: #bdbdbd;
+$color-border-focus: #777777;
+
+$font-body: "Puritan", sans-serif;
+$font-display:'Amatic SC', cursive;
+
+@mixin type-base {
+	font-family: $font-body;
+	font-size: 16px;
+	line-height: 28px;
+	letter-spacing: 0.15px;
+	color: $color-base;
+	-webkit-font-smoothing: antialiased;
+}
+@mixin type-display {
+	font-family: $font-display;
+	letter-spacing: 2px;
+	color: $color-display;
+}
+
+// Global ----------------------------------------------------------------------
+
+body {
+	@include type-base();
+}
+h1, h2, h3, h4, h5, .h2 {
+	@include type-display();
+}
+h1, .h1 {
+	font-size: 24px;
+}
+h2, .h2 {
+	font-size: 24px;
+	line-height: 40px;
+	margin-top: 40px;
+	margin-bottom: 8px;
+	display: block;
+}
+// textarea, input[type=text] {
+// 	+ h2, + .h2 { margin-top: 46px; }
+// }
+a {
+	color: $color-base;
+	text-decoration: none;
+	border-bottom: 1px solid $color-border;
+}
+a:hover {
+	color: $color-display;
+	border-bottom: 1px solid $color-display;
+}
+input[type=text], textarea {
+	@include type-base();
+
+	background: #fff;
+	border: 1px solid $color-border;
+	width: 100%;
+	resize: none;
+	border-radius: 3px;
+	padding: 8px 12px;
+}
+input[type=text]:focus, textarea:focus {
+	border: 1px solid $color-border-focus;
+}
+.button {
+	@include type-display();
+
+	background: $color-base;
+	background: #000000;
+	font-size: 22px;
+	line-height: 44px;
+	letter-spacing: 2px;
+	border: none;
+	border-radius: 3px;
+	display: block;
+	height: 44px;
+	color: white;
+	padding: 0 24px;
+	cursor: pointer;
+}
+.button:hover {
+	background: #222;
+}
+.button:active {
+	background: $color-base;
+	color: #aaa;
+}
+label.selector {
+	display: block;
+	margin-bottom: 8px;
+}
+::selection {
+	background: $color-highlight;
+	color: #ffffff;
+}
+
+// Navigation ------------------------------------------------------------------
+
+#nav {
+	height: 90px;
+	margin: 0 auto;
+
+	#nav-logo {
+		font-family: $font-display;
+		font-size: 64px;
+		position: absolute;
+		width: 100px;
+		height: 90px;
+		line-height: 60px;
+		letter-spacing: 7px;
+		text-align: center;
+		left: calc(50% - 2px);
+		top: 28px;
+		transform: translateX(-50%);
+	
+		.logo-amp {
+			color: $color-highlight;
+			font-size: 38px;
+			position: relative;
+			top: -9px;
+		}
+	}
+	#nav-left {
+		position: absolute;
+		right: calc(50% + 98px);
+		top: 50px;
+		text-align: right;
+
+		a {
+			display: block;
+			float: right;
+			margin-left: 32px;
+		}
+	}
+	#nav-right {
+		position: absolute;
+		left: calc(50% + 98px);
+		top: 50px;
+		text-align: left;
+		
+		a {
+			display: block;
+			float: left;
+			margin-right: 32px;
+		}
+	}
+	a {
+		color:  $color-base;
+		font-family: 'Amatic SC', cursive;
+		letter-spacing: 2px;
+		font-size: 28px;
+		text-decoration: none;
+		border: none;
+		position: relative;
+		opacity: 1;
+
+		&::after {
+			content: "";
+			width: 100%;
+			height: 3px;
+			display: block;
+			position: absolute;
+			bottom: -7px;
+			background-image: url("/assets/images/highlight.png");
+			background-size: 100% 100%;
+			opacity: 0;
+			transition: all 0.1s linear;
+		}
+		&.selected::after,
+		&:hover::after {
+			opacity: 1;
+			transition: all 0.05s linear;
+		}
+	}
+}
+
+ // Main ------------------------------------------------------------------------
+
+.main {
+	max-width: 600px;
+	margin: 80px auto;
+	padding: 0 24px;
+}
+
+// Home ------------------------------------------------------------------------
+
+.hero-home {
+	background: url("/assets/images/home-illustrations.png") center center no-repeat;
+	background-size: contain;
+	max-width: 440px;
+	height: 100%;
+	max-height: 440px;
+	margin: 0 auto;
+	position: relative;
+}
+.home-info {
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	
+	h2 	{
+		font-size: 40px;
+		line-height: 54px;
+		margin: 0;
+	
+		a {
+			color: $color-highlight;
+			border: 0;
+			display: inline-block;
+			position: relative;
+			
+			&:hover {
+				opacity: 0.7;
+			}
+			&::after {
+				content: "";
+				width: 100%;
+				height: 3px;
+				display: block;
+				position: absolute;
+				bottom: 1px;
+				background-image: url("/assets/images/highlight.png");
+				background-size: 100% 100%;
+			}
+		}
+		.dot {
+			font-size: 22px;
+			line-height: 22px;
+			position: relative;
+			top: -4px;
+			padding: 4px;
+			color: $color-highlight;
+		}
+	}
+}
+
+
+// RSVP ------------------------------------------------------------------------
+
+#form-rsvp .button {
+	margin-top: 40px;
+}
+
+// Location --------------------------------------------------------------------
+
+.gm-style-cc {
+	display: none;
+}
