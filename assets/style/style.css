@@ -50,6 +50,7 @@ input[type=text], textarea {
   resize: none;
   border-radius: 3px;
   padding: 8px 12px;
+  -webkit-appearance: none;
 }
 
 input[type=text]:focus, textarea:focus {
@@ -72,6 +73,7 @@ input[type=text]:focus, textarea:focus {
   color: white;
   padding: 0 24px;
   cursor: pointer;
+  -webkit-appearance: none;
 }
 
 .button:hover {
