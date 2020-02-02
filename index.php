@@ -11,7 +11,7 @@
 	
 	<? include("include/nav.php") ?>
 	
-	<div class="main">
+	<div class="main" style="max-width:440px;">
 		<div class="hero-home">
 			<div class="home-info">
 				<h2>7<span class="dot">•</span>11<span class="dot">•</span>2020</h2>
