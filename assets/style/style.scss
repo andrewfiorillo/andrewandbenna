@@ -254,3 +254,31 @@ label.selector {
 .gm-style-cc {
 	display: none;
 }
+
+// Mobile ----------------------------------------------------------------------
+
+@media only screen and (max-device-width: 800px) {
+	#nav {
+		#nav-left,
+		#nav-right {
+			display: flex; 
+			justify-content: center;
+			width: 100%;
+			text-align: center;
+			left: auto;
+			right: auto;
+			top: 115px;
+			a { 
+				float: none;
+				display: inline-block;
+				text-align: center;
+				margin: 0 16px;
+			}
+		}
+		#nav-left { flex-direction: row-reverse; }
+		#nav-right { top: 165px; }
+	}
+	.main {
+		margin-top: 170px;
+	}
+}

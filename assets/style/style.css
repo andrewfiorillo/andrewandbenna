@@ -231,4 +231,34 @@ label.selector {
   display: none;
 }
 
+@media only screen and (max-device-width: 800px) {
+  #nav #nav-left,
+#nav #nav-right {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    left: auto;
+    right: auto;
+    top: 115px;
+  }
+  #nav #nav-left a,
+#nav #nav-right a {
+    float: none;
+    display: inline-block;
+    text-align: center;
+    margin: 0 16px;
+  }
+  #nav #nav-left {
+    flex-direction: row-reverse;
+  }
+  #nav #nav-right {
+    top: 165px;
+  }
+
+  .main {
+    margin-top: 170px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
