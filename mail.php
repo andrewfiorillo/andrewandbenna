@@ -40,7 +40,7 @@ $to = 'bennaandrew@gmail.com';
 $subject = "$rsvp - $names";
 $headers = 'From: RSVP <mail@andrewandbenna.com>' . "\r\n" .
 			'Content-type: text/html; charset=iso-8859-1' . "\r\n" .
-			'Reply-To: fiorilloaj@gmail.com' . "\r\n" .
+			'Reply-To: mail@andrewandbenna.com' . "\r\n" .
 			'X-Mailer: PHP/' . phpversion();
 
 mail($to, $subject, $message, $headers);
