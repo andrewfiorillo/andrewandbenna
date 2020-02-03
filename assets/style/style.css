@@ -95,6 +95,14 @@ label.selector {
   color: #ffffff;
 }
 
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
 #nav {
   height: 90px;
   margin: 0 auto;

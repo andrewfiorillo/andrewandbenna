@@ -10,24 +10,29 @@
 <body>
 	
 	<? include("include/nav.php") ?>
+
+	<div class="rsvp-feedback hide" style="margin: 0 auto; text-align: center;"></div>
 	
 	<div class="main">
 
-		<p>Thanks for RSVPing. We’ve just got a few questions below that’ll help us plan everything out. If you’re confused, have any questions, or just want to chat, <a href="">get in touch</a>!</p>
+		<p>Thanks for RSVPing. We’ve just got a few questions below that’ll help us plan everything out. If you’re confused, have any questions, or just want to chat, <a href="mailto:bennaandrew@gmail.com">get in touch</a>!</p>
 
 		<form name="form_rsvp" id="form-rsvp">
-			<label class="h2" for="field_names">Your full names</label>
-			<textarea name="field_names" rows="3">Andrew</textarea>
 
+			<label class="h2" for="field_names">Your full names</label>
+			<textarea name="field_names" rows="3"></textarea>
+
+			
 			<label class="h2" for="field_rvsp">Are you coming?</label>
 			<label class="selector">
-				<input type="radio" name="field_rsvp" value="Yes" checked />
+				<input type="radio" name="field_rsvp" value="Yes" />
 				<span>I will definitely 100% no take-backs be there.</span>
 			</label>
 			<label class="selector">
 				<input type="radio" name="field_rsvp" value="No" />
 				<span>I will not be there.</span>
 			</label>
+
 
 			<label class="h2">Which events will you be attending?</label>
 			<label class="selector">
@@ -39,16 +44,18 @@
 				<span>Saturday Wedding</span>
 			</label>
 			<label class="selector">
-				<input type="checkbox" name="field_events_sunday" />
-				Sunday Lunch
+				<input type="checkbox" name="field_events_sunday" />Sunday Lunch
 			</label>
 			<span>Check out the <a href="/schedule">schedule</a> for more info about each day.</span>
+
 
 			<label class="h2" for="field_diet">Dietary restrictions (optional)</label>
 			<input type="text" name="field_diet" />
 
-			<div class="feedback error hide" style="display: none;"><br>looks like you forgot something</div>
+
+			<div class="error hide" style="color: #E00C32;"><br>Oops. Looks like you forgot something.</div>
 			<input id="rsvp-submit" name="submit" class="button" type="button" value="submit">
+
 		</form>
 
 	</div>
@@ -56,6 +63,9 @@
 	<script type="text/javascript">
 		var form = document.forms.form_rsvp;
 		var submitButton = form.submit;
+		var feedback = document.querySelector(".rsvp-feedback")
+		var error = document.querySelector(".error")
+		var main = document.querySelector(".main")
 		
 		submitButton.addEventListener("click", function() {
 
@@ -77,10 +87,15 @@
 						'Content-Type': 'application/json'
 					}),
 				}).then(response => response.json()).then( data => {
-					console.log(data)
+					if (data.rsvp == "Yes") main.innerHTML = `
+						<div style="text-align:center;">Thanks for the response. Looking forward to seeing you!</div>
+					`;
+					else if (data.rsvp == "No") main.innerHTML = `"
+						<div style="text-align:center;">Thanks for the response. You'll be missed!</div>
+					`;
 				})
 			} else {
-				document.querySelector(".error").style.display = "block";
+				error.classList.remove("hide");
 			}
 			
 		});
