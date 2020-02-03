@@ -40,7 +40,7 @@ $to = 'bennaandrew@gmail.com';
 $subject = "$rsvp - $names";
 $headers = 'From: RSVP <mail@andrewandbenna.com>' . "\r\n" .
 			'Content-type: text/html; charset=iso-8859-1' . "\r\n" .
-			'Reply-To: bennaandrew@gmail.com' . "\r\n" .
+			'Reply-To: fiorilloaj@gmail.com' . "\r\n" .
 			'X-Mailer: PHP/' . phpversion();
 
 mail($to, $subject, $message, $headers);
@@ -49,6 +49,6 @@ mail($to, $subject, $message, $headers);
 // Return responee
 
 header('Content-Type: application/json');
-echo json_encode(['rsvp' => $rsvp, 'name' => $names])
+echo json_encode(array('rsvp' => $rsvp, 'name' => $names))
 
 ?>
