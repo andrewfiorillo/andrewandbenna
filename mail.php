@@ -13,64 +13,44 @@ $field_diet = $input['field_diet'];
 // Build Email
 
 $to = 'fiorilloaj@gmail.com';
-$subject = "RSVP: $rsvp";
+$subject = "$rsvp - $names";
 
 
 // Message
 
 $message = "
-Names:
+<strong>Names</strong><br>
 $names
+<br>
+<br>
 
-RSVP:
+<strong>RSVP</strong><br>
 $rsvp
+<br>
+<br>
 
-Events:
-
-Friday - $field_events_friday
-Saturday - $field_events_saturday
+<strong>Events</strong><br>
+Friday - $field_events_friday<br>
+Saturday - $field_events_saturday<br>
 Friday - $field_events_sunday
+<br>
+<br>
 
-Dietary Restrictions:
+<strong>Dietary Restrictions</strong>
+<br>
 $field_diet
 ";
 
-// error_log($message);
-
-$headers = 'From: andrewandbenna <mail@andrewandbenna.com>' . "\r\n" .
+$headers = 'From: RSVP <mail@andrewandbenna.com>' . "\r\n" .
+			'Content-type: text/html; charset=iso-8859-1' . "\r\n" .
 			'Reply-To: bennaandrew@gmail.com' . "\r\n" .
 			'X-Mailer: PHP/' . phpversion();
 
 mail($to, $subject, $message, $headers);
 
 
+// Return responee
 
-
-
-	// return "foo";
-
-	// error_log(print_r($input, true));
-
-	// $data = '{
-	// 	"name": "Aragorn",
-	// 	"race": "Human"
-	// }';
-	
-	// $character = json_decode($data);
-	// echo $character->name;
-
-	
-	// the message
-	// $msg = "First line of text\nSecond line of text";
-
-	// // use wordwrap() if lines are longer than 70 characters
-	// $msg = wordwrap($msg,70);
-
-	// // send email
-	// mail("fiorilloaj@gmail.com","My subject",$msg);
-
-	// error_log(print_r($input, true));
-	// error_log($input["names"]);
 header('Content-Type: application/json');
 echo json_encode($input);
 
