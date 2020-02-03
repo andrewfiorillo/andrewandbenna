@@ -17,11 +17,11 @@
 
 		<form name="form_rsvp" id="form-rsvp">
 			<label class="h2" for="field_names">Your full names</label>
-			<textarea name="field_names" rows="3"></textarea>
+			<textarea name="field_names" rows="3">Andrew</textarea>
 
 			<label class="h2" for="field_rvsp">Are you coming?</label>
 			<label class="selector">
-				<input type="radio" name="field_rsvp" value="Yes" />
+				<input type="radio" name="field_rsvp" value="Yes" checked />
 				<span>I will definitely 100% no take-backs be there.</span>
 			</label>
 			<label class="selector">
@@ -58,20 +58,31 @@
 		var submitButton = form.submit;
 		
 		submitButton.addEventListener("click", function() {
-				var values = {
-					names: form.field_names.value,
-					rsvp: form.field_rsvp.value,
-					field_events_friday: form.field_events_friday.checked,
-					field_events_saturday: form.field_events_saturday.checked,
-					field_events_sunday: form.field_events_sunday.checked,
-					field_diet: form.field_diet.value
-				}
-				
-				if (values.rsvp && values.names.match(/^[0-9a-zA-Z]+$/)) {
-					console.log(values);
-				} else {
-					document.querySelector(".error").style.display = "block";
-				}
+
+			var values = {
+				names: form.field_names.value,
+				rsvp: form.field_rsvp.value,
+				field_events_friday: form.field_events_friday.checked ? "Yes" : "No",
+				field_events_saturday: form.field_events_saturday.checked  ? "Yes" : "No",
+				field_events_sunday: form.field_events_sunday.checked  ? "Yes" : "No",
+				field_diet: form.field_diet.value
+			}
+			
+			if (values.rsvp && values.names != "") {
+				fetch("/mail", {
+					credentials: 'same-origin',
+					method: 'POST',
+					body: JSON.stringify(values),
+					headers: new Headers({
+						'Content-Type': 'application/json'
+					}),
+				}).then(response => response.json()).then( data => {
+					console.log(data)
+				})
+			} else {
+				document.querySelector(".error").style.display = "block";
+			}
+			
 		});
 	</script>
 
