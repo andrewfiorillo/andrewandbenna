@@ -75,7 +75,7 @@
 				field_events_friday: form.field_events_friday.checked ? "Yes" : "No",
 				field_events_saturday: form.field_events_saturday.checked  ? "Yes" : "No",
 				field_events_sunday: form.field_events_sunday.checked  ? "Yes" : "No",
-				field_diet: form.field_diet.value
+				field_diet: form.field_diet.value != "" ? form.field_diet.value : "None"
 			}
 			
 			if (values.rsvp && values.names != "") {
