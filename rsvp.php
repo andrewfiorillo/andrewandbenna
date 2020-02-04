@@ -10,8 +10,6 @@
 <body>
 	
 	<? include("include/nav.php") ?>
-
-	<div class="rsvp-feedback hide" style="margin: 0 auto; text-align: center;"></div>
 	
 	<div class="main">
 
