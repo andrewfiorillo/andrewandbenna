@@ -10,6 +10,9 @@ $color-border-focus: #777777;
 $font-body: "Puritan", sans-serif;
 $font-display:'Amatic SC', cursive;
 
+$animation-time: 40000ms;
+$animation-circle-size: 350px;
+
 @mixin type-base {
 	font-family: $font-body;
 	font-size: 16px;
@@ -125,7 +128,7 @@ label.selector {
 		left: calc(50% - 2px);
 		top: 28px;
 		transform: translateX(-50%);
-	
+
 		.logo-amp {
 			color: $color-highlight;
 			font-size: 38px;
@@ -150,7 +153,7 @@ label.selector {
 		left: calc(50% + 98px);
 		top: 50px;
 		text-align: left;
-		
+
 		a {
 			float: left;
 			margin-right: 32px;
@@ -211,18 +214,18 @@ label.selector {
 	top: 50%;
 	left: 50%;
 	transform: translateY(-50%) translateX(-50%);
-	
+
 	h2 	{
 		font-size: 40px;
 		line-height: 54px;
 		margin: 0;
-	
+
 		a {
 			color: $color-highlight;
 			border: 0;
 			display: inline-block;
 			position: relative;
-			
+
 			&:hover {
 				opacity: 0.7;
 			}
@@ -250,17 +253,11 @@ label.selector {
 
 // Spin ------------------------------------------------------------------------
 
-:root {
-	--animation-time: 30000ms;
-	--circle-size: 350px;
-	--teal: #30C3BB;
-}
-
 @keyframes outer-spin {
 	0% {
 		transform: rotate(0deg);
 	}
-	
+
 	100% {
 		transform: rotate(360deg);
 	}
@@ -270,24 +267,20 @@ label.selector {
 	0% {
 		transform: rotate(0deg);
 	}
-	
+
 	100% {
 		transform: rotate(-360deg);
 	}
-}
-
-.no-rotation {
-	animation: anti-spin var(--animation-time) linear infinite;
 }
 
 .illustration-wrapper {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	width: var(--circle-size);
-	height: var(--circle-size);
-	margin-left: calc(var(--circle-size) * -0.5);
-	margin-top: calc(var(--circle-size) * -0.5);
+	width: $animation-circle-size;
+	height: $animation-circle-size;
+	margin-top: $animation-circle-size * -0.5;
+	margin-left: $animation-circle-size * -0.5;
 }
 
 .illustrations,
@@ -301,7 +294,7 @@ label.selector {
 
 .illustrations {
 	z-index: 1;
-	animation: outer-spin var(--animation-time) linear infinite;
+	animation: outer-spin $animation-time linear infinite;
 }
 
 .illustrations-content {
@@ -323,96 +316,116 @@ label.selector {
 	height: 70px;
 	margin-top: -35px;
 	margin-left: -35px;
-	// background: var(--teal);
-	background-repeat: none;
+	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: contain;
 	border-radius: 100%;
+	animation: anti-spin $animation-time linear infinite;
 }
 
 .illustration:nth-child(1) {
-	top: 0;
+	top: -3%;
 	left: 50%;
-	background-image: url("/assets/images/icon-pizza.jpg")
+	background-image: url("/assets/images/icon-pizza.jpg");
 }
 
 .illustration:nth-child(2) {
-	top: 7%;
-	left: 75%;
-	background-image: url("/assets/images/icon-pie.jpg")
+	top: 1%;
+	left: 70.5%;
+	background-image: url("/assets/images/icon-pie.jpg");
 }
 
 .illustration:nth-child(3) {
-	top: 26%;
-	left: 94%;
-	background-image: url("/assets/images/icon-tea.jpg")
+	top: 12.5%;
+	left: 87.1%;
+	background-image: url("/assets/images/icon-tea.jpg");
 }
 
 .illustration:nth-child(4) {
-	top: 50%;
-	left: 100%;
-	background-image: url("/assets/images/icon-croissant.jpg")
+	top: 30%;
+	left: 98.5%;
+	background-image: url("/assets/images/icon-croissant.jpg");
 }
 
 .illustration:nth-child(5) {
-	top: 74%;
-	left: 93%;
-	background-image: url("/assets/images/icon-banana.jpg")
+	top: 50%;
+	left: 102.5%;
+	background-image: url("/assets/images/icon-banana.jpg");
 }
 
 .illustration:nth-child(6) {
-	top: 92%;
-	left: 75%;
-	background-image: url("/assets/images/icon-bun.jpg")
+	top: 70%;
+	left: 98.5%;
+	background-image: url("/assets/images/icon-bun.jpg");
 }
 
 .illustration:nth-child(7) {
-	top: 100%;
-	left: 50%;
-	background-image: url("/assets/images/icon-dumpling.jpg")
+	top: 87%;
+	left: 88%;
+	background-image: url("/assets/images/icon-dumpling.jpg");
 }
 
 .illustration:nth-child(8) {
-	top: 93%;
-	left: 26%;
-	background-image: url("/assets/images/icon-pretzel.jpg")
+	top: 98.5%;
+	left: 70%;
+	background-image: url("/assets/images/icon-pretzel.jpg");
 }
 
 .illustration:nth-child(9) {
-	top: 75%;
-	left: 7%;
-	background-image: url("/assets/images/icon-cookie.jpg")
+	top: 102.5%;
+	left: 50%;
+	background-image: url("/assets/images/icon-cookie.jpg");
 }
 
 .illustration:nth-child(10) {
-	top: 50%;
-	left: 0%;
-	background-image: url("/assets/images/icon-bread.jpg")
+	top: 98.5%;
+	left: 30%;
+	background-image: url("/assets/images/icon-bread.jpg");
 }
 
 .illustration:nth-child(11) {
-	top: 26%;
-	left: 7%;
-	background-image: url("/assets/images/icon-cake.jpg")
+	top: 87%;
+	left: 13%;
+	background-image: url("/assets/images/icon-cake.jpg");
 }
 
 .illustration:nth-child(12) {
-	top: 7%;
-	left: 25%;
-	background-image: url("/assets/images/icon-bagel.jpg")
+	top: 70%;
+	left: 1.5%;
+	background-image: url("/assets/images/icon-bagel.jpg");
 }
-  
-  
-  // below taken from the site's source
-  // ---------------------------------------------------
-  
+
+.illustration:nth-child(13) {
+	top: 50%;
+	left: -2.5%;
+	background-image: url("/assets/images/icon-meringue.jpg");
+}
+
+.illustration:nth-child(14) {
+	top: 29.5%;
+	left: 1%;
+	background-image: url("/assets/images/icon-lemon.jpg");
+}
+
+.illustration:nth-child(15) {
+	top: 12.5%;
+	left: 12.5%;
+	background-image: url("/assets/images/icon-cone.jpg");
+}
+
+.illustration:nth-child(16) {
+	top: 1%;
+	left: 30%;
+	background-image: url("/assets/images/icon-coffee.jpg");
+}
+
 .dot {
 	font-size: 22px;
 	line-height: 22px;
 	position: relative;
 	top: -4px;
 	padding: 4px;
-	color: var(--teal);
+	color: $color-highlight;
 }
 
 
@@ -434,14 +447,14 @@ label.selector {
 	#nav {
 		#nav-left,
 		#nav-right {
-			display: flex; 
+			display: flex;
 			justify-content: center;
 			width: 100%;
 			text-align: center;
 			left: auto;
 			right: auto;
 			top: 115px;
-			a { 
+			a {
 				float: none;
 				display: inline-block;
 				text-align: center;

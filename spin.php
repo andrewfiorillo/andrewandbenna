@@ -4,27 +4,31 @@
 		$page = "home";
 		$page_title = "Home";
 	?>
-		
+
 	<? include("include/header.php"); ?>
 </head>
 <body>
-	
+
 	<? include("include/nav.php") ?>
 
 	<div class="illustration-wrapper">
 		<div class="illustrations">
-			<div class="illustration no-rotation"></div>
-			<div class="illustration no-rotation"></div>
-			<div class="illustration no-rotation"></div>
-			<div class="illustration no-rotation"></div>
-			<div class="illustration no-rotation"></div>
-			<div class="illustration no-rotation"></div>
-			<div class="illustration no-rotation"></div>
-			<div class="illustration no-rotation"></div>
-			<div class="illustration no-rotation"></div>
-			<div class="illustration no-rotation"></div>
-			<div class="illustration no-rotation"></div>
-			<div class="illustration no-rotation"></div>
+			<div class="illustration"></div>
+			<div class="illustration"></div>
+			<div class="illustration"></div>
+			<div class="illustration"></div>
+			<div class="illustration"></div>
+			<div class="illustration"></div>
+			<div class="illustration"></div>
+			<div class="illustration"></div>
+			<div class="illustration"></div>
+			<div class="illustration"></div>
+			<div class="illustration"></div>
+			<div class="illustration"></div>
+			<div class="illustration"></div>
+			<div class="illustration"></div>
+			<div class="illustration"></div>
+			<div class="illustration"></div>
 		</div>
 		<div class="illustrations-content">
 			<span>
