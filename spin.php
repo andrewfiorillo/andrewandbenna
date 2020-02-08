@@ -25,6 +25,10 @@
 			<div class="illustration"></div>
 			<div class="illustration"></div>
 			<div class="illustration"></div>
+			<div class="illustration"></div>
+			<div class="illustration"></div>
+			<div class="illustration"></div>
+			<div class="illustration"></div>
 		</div>
 		<div class="illustrations-content">
 			<span>
