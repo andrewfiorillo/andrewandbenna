@@ -380,12 +380,6 @@ label.selector {
   color: #30C3BB;
 }
 
-:root {
-  --animation-time: 30000ms;
-  --circle-size: 350px;
-  --teal: #30C3BB;
-}
-
 @keyframes outer-spin {
   0% {
     transform: rotate(0deg);
@@ -406,10 +400,10 @@ label.selector {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: var(--circle-size);
-  height: var(--circle-size);
-  margin-left: calc(var(--circle-size) * -0.5);
-  margin-top: calc(var(--circle-size) * -0.5);
+  width: 350px;
+  height: 350px;
+  margin-top: -175px;
+  margin-left: -175px;
 }
 
 .illustrations,
@@ -423,7 +417,7 @@ label.selector {
 
 .illustrations {
   z-index: 1;
-  animation: outer-spin var(--animation-time) linear infinite;
+  animation: outer-spin 40000ms linear infinite;
 }
 
 .illustrations-content {
@@ -449,7 +443,7 @@ label.selector {
   background-position: center center;
   background-size: contain;
   border-radius: 100%;
-  animation: anti-spin var(--animation-time) linear infinite;
+  animation: anti-spin 40000ms linear infinite;
 }
 
 .illustration:nth-child(1) {
@@ -554,7 +548,7 @@ label.selector {
   position: relative;
   top: -4px;
   padding: 4px;
-  color: var(--teal);
+  color: #30C3BB;
 }
 
 #form-rsvp .button {

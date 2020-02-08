@@ -10,6 +10,9 @@ $color-border-focus: #777777;
 $font-body: "Puritan", sans-serif;
 $font-display:'Amatic SC', cursive;
 
+$animation-time: 40000ms;
+$animation-circle-size: 350px;
+
 @mixin type-base {
 	font-family: $font-body;
 	font-size: 16px;
@@ -250,12 +253,6 @@ label.selector {
 
 // Spin ------------------------------------------------------------------------
 
-:root {
-	--animation-time: 30000ms;
-	--circle-size: 350px;
-	--teal: #30C3BB;
-}
-
 @keyframes outer-spin {
 	0% {
 		transform: rotate(0deg);
@@ -280,10 +277,10 @@ label.selector {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	width: var(--circle-size);
-	height: var(--circle-size);
-	margin-left: calc(var(--circle-size) * -0.5);
-	margin-top: calc(var(--circle-size) * -0.5);
+	width: $animation-circle-size;
+	height: $animation-circle-size;
+	margin-top: $animation-circle-size * -0.5;
+	margin-left: $animation-circle-size * -0.5;
 }
 
 .illustrations,
@@ -297,7 +294,7 @@ label.selector {
 
 .illustrations {
 	z-index: 1;
-	animation: outer-spin var(--animation-time) linear infinite;
+	animation: outer-spin $animation-time linear infinite;
 }
 
 .illustrations-content {
@@ -323,7 +320,7 @@ label.selector {
 	background-position: center center;
 	background-size: contain;
 	border-radius: 100%;
-	animation: anti-spin var(--animation-time) linear infinite;
+	animation: anti-spin $animation-time linear infinite;
 }
 
 .illustration:nth-child(1) {
@@ -428,7 +425,7 @@ label.selector {
 	position: relative;
 	top: -4px;
 	padding: 4px;
-	color: var(--teal);
+	color: $color-highlight;
 }
 
 
