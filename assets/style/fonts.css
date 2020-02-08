@@ -1,0 +1,52 @@
+/* amatic-sc-700 - latin */
+@font-face {
+  font-family: "Amatic SC";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/assets/fonts/amatic-sc-v13-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: local("Amatic SC Bold"), local("AmaticSC-Bold"), url("/assets/fonts/amatic-sc-v13-latin-700.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/amatic-sc-v13-latin-700.woff2") format("woff2"), url("/assets/fonts/amatic-sc-v13-latin-700.woff") format("woff"), url("/assets/fonts/amatic-sc-v13-latin-700.ttf") format("truetype"), url("/assets/fonts/amatic-sc-v13-latin-700.svg#AmaticSC") format("svg");
+  /* Legacy iOS */
+}
+/* puritan-regular - latin */
+@font-face {
+  font-family: "Puritan";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/fonts/puritan-v11-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Puritan Regular"), local("Puritan-Regular"), url("/assets/fonts/puritan-v11-latin-regular.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/puritan-v11-latin-regular.woff2") format("woff2"), url("/assets/fonts/puritan-v11-latin-regular.woff") format("woff"), url("/assets/fonts/puritan-v11-latin-regular.ttf") format("truetype"), url("/assets/fonts/puritan-v11-latin-regular.svg#Puritan") format("svg");
+  /* Legacy iOS */
+}
+/* puritan-italic - latin */
+@font-face {
+  font-family: "Puritan";
+  font-style: italic;
+  font-weight: 400;
+  src: url("/assets/fonts/puritan-v11-latin-italic.eot");
+  /* IE9 Compat Modes */
+  src: local("Puritan Italic"), local("Puritan-Italic"), url("/assets/fonts/puritan-v11-latin-italic.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/puritan-v11-latin-italic.woff2") format("woff2"), url("/assets/fonts/puritan-v11-latin-italic.woff") format("woff"), url("/assets/fonts/puritan-v11-latin-italic.ttf") format("truetype"), url("/assets/fonts/puritan-v11-latin-italic.svg#Puritan") format("svg");
+  /* Legacy iOS */
+}
+/* puritan-700 - latin */
+@font-face {
+  font-family: "Puritan";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/assets/fonts/puritan-v11-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: local("Puritan Bold"), local("Puritan-Bold"), url("/assets/fonts/puritan-v11-latin-700.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/puritan-v11-latin-700.woff2") format("woff2"), url("/assets/fonts/puritan-v11-latin-700.woff") format("woff"), url("/assets/fonts/puritan-v11-latin-700.ttf") format("truetype"), url("/assets/fonts/puritan-v11-latin-700.svg#Puritan") format("svg");
+  /* Legacy iOS */
+}
+/* puritan-700italic - latin */
+@font-face {
+  font-family: "Puritan";
+  font-style: italic;
+  font-weight: 700;
+  src: url("/assets/fonts/puritan-v11-latin-700italic.eot");
+  /* IE9 Compat Modes */
+  src: local("Puritan Bold Italic"), local("Puritan-BoldItalic"), url("/assets/fonts/puritan-v11-latin-700italic.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/puritan-v11-latin-700italic.woff2") format("woff2"), url("/assets/fonts/puritan-v11-latin-700italic.woff") format("woff"), url("/assets/fonts/puritan-v11-latin-700italic.ttf") format("truetype"), url("/assets/fonts/puritan-v11-latin-700italic.svg#Puritan") format("svg");
+  /* Legacy iOS */
+}
+
+/*# sourceMappingURL=fonts.css.map */

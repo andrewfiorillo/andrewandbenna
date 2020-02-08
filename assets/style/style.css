@@ -402,10 +402,6 @@ label.selector {
     transform: rotate(-360deg);
   }
 }
-.no-rotation {
-  animation: anti-spin var(--animation-time) linear infinite;
-}
-
 .illustration-wrapper {
   position: absolute;
   top: 50%;
@@ -453,6 +449,7 @@ label.selector {
   background-position: center center;
   background-size: contain;
   border-radius: 100%;
+  animation: anti-spin var(--animation-time) linear infinite;
 }
 
 .illustration:nth-child(1) {
