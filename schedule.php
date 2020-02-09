@@ -12,7 +12,7 @@
 	<? include("include/nav.php") ?>
 	
 	<div class="main">
-		<h2>Friday 7/10 - Evening</h2>
+		<h2>Friday 7/10</h2>
 		<p>
 			<strong>What:</strong> Pizza Party<br>
 			If you're around Friday night and looking for company, we'd love to see you. We'll be hanging out at the venue for a few hours. We'll have a mobile pizza oven to serve you some super fresh pizza (including gluten free, dairy free, and vegan options)<br>
@@ -21,7 +21,7 @@
 			<strong>Wear:</strong> Super casual<br>
 		</p>
 		
-		<h2>Saturday 7/11 - Evening</h2>
+		<h2>Saturday 7/11</h2>
 		<p>
 			<strong>What:</strong> Wedding!<br>
 			<strong>When:</strong> 5:00pm - 12:00am<br>
@@ -30,7 +30,7 @@
 	
 		</p>
 
-		<h2>Sunday 7/12 - Morning</h2>
+		<h2>Sunday 7/12</h2>
 		<p>
 		<strong>What:</strong> Brunch / Lunch<br>
 			If you're awake, come eat and hang out with us before you go. There will be a whole pig, as well as other non-pig things to eat (like fruit, bagels, eggs, coffee, tea, maybe some croissants.)<br>
