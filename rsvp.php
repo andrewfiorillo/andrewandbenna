@@ -51,7 +51,7 @@
 			<input type="text" name="field_diet" />
 
 
-			<div class="error hide" style="color: #E00C32;"><br>Oops. Looks like you forgot something.</div>
+			<div class="error hide" style="color: #E00C32;"><br>Hold up. Looks like you forgot something.</div>
 			<input id="rsvp-submit" name="submit" class="button" type="button" value="submit">
 
 		</form>
