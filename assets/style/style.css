@@ -345,6 +345,7 @@ label.selector {
   text-align: center;
   top: 50%;
   left: 50%;
+  width: 100%;
   transform: translateY(-50%) translateX(-50%);
 }
 .home-info h2 {
@@ -380,6 +381,14 @@ label.selector {
   color: #30C3BB;
 }
 
+.spin .main {
+  overflow: hidden;
+  position: relative;
+  max-width: 440px;
+  padding-top: 45px;
+  padding-bottom: calc(100% - 45px);
+}
+
 @keyframes outer-spin {
   0% {
     transform: rotate(0deg);
@@ -398,18 +407,15 @@ label.selector {
 }
 .illustration-wrapper {
   position: absolute;
-  top: 50%;
   left: 50%;
   width: 350px;
   height: 350px;
-  margin-top: -175px;
   margin-left: -175px;
 }
 
 .illustrations,
 .illustrations-content {
   position: absolute;
-  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
@@ -439,6 +445,7 @@ label.selector {
   height: 70px;
   margin-top: -35px;
   margin-left: -35px;
+  transform: translateX(-100%) translateY(-100%);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -542,15 +549,6 @@ label.selector {
   background-image: url("/assets/images/icon-coffee.jpg");
 }
 
-.dot {
-  font-size: 22px;
-  line-height: 22px;
-  position: relative;
-  top: -4px;
-  padding: 4px;
-  color: #30C3BB;
-}
-
 #form-rsvp .button {
   margin-top: 40px;
 }
@@ -587,10 +585,41 @@ label.selector {
   .main {
     margin-top: 170px;
   }
+
+  .spin .main {
+    margin-top: 150px;
+  }
 }
-@media (max-width: 370px) {
-  .hero-home h2 {
-    font-size: 10vw;
+@media (max-width: 500px) {
+  .illustration-wrapper {
+    width: 70vw;
+    height: 70vw;
+    margin-left: -35vw;
+  }
+
+  .illustration {
+    width: 13vw;
+    height: 13vw;
+    margin-top: -6.5vw;
+    margin-left: -6.5vw;
+  }
+
+  .home-info h2 {
+    font-size: 8vw;
+    line-height: 1.35;
+  }
+
+  .main {
+    margin-top: 160px;
+  }
+
+  .spin .main {
+    margin-top: 140px;
+  }
+}
+@media (max-width: 400px) {
+  .home-info h2 {
+    font-size: 8.5vw;
     line-height: 1.35;
   }
 }

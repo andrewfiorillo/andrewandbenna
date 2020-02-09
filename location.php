@@ -12,9 +12,9 @@
 	<? include("include/nav.php") ?>
 	
 	<div class="main">
-		<div id="map" style="width:100%;height:400px;"></div>
+		<div id="map" style="width:100%;height:350px;"></div>
 	</div>
-	<script>
+	<script type="text/javascript">
 		function initMap() {
 
 			var myLatLng = {lat: 42.5143953, lng: -71.5344247};
@@ -23,7 +23,7 @@
 			var map = new google.maps.Map(document.getElementById('map'), {
 				zoom: 4,
 				center: mapCenter,
-				zoom:10,
+				zoom:9,
 				disableDefaultUI: true,
 				zoomControl: true,
 				styles: [
@@ -191,7 +191,7 @@
 			var marker = new google.maps.Marker({
 				position: myLatLng,
 				map: map,
-				title: 'Hello World!'
+				title: "Hello World!"
 			});
 		}
 	</script>

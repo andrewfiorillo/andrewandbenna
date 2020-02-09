@@ -21,6 +21,7 @@ $animation-circle-size: 350px;
 	color: $color-base;
 	-webkit-font-smoothing: antialiased;
 }
+
 @mixin type-display {
 	font-family: $font-display;
 	letter-spacing: 2px;
@@ -32,12 +33,15 @@ $animation-circle-size: 350px;
 body {
 	@include type-base();
 }
+
 h1, h2, h3, h4, h5, .h2 {
 	@include type-display();
 }
+
 h1, .h1 {
 	font-size: 24px;
 }
+
 h2, .h2 {
 	font-size: 24px;
 	line-height: 40px;
@@ -53,10 +57,12 @@ a {
 	text-decoration: none;
 	border-bottom: 1px solid $color-border;
 }
+
 a:hover {
 	color: $color-display;
 	border-bottom: 1px solid $color-display;
 }
+
 input[type=text], textarea {
 	@include type-base();
 
@@ -68,9 +74,11 @@ input[type=text], textarea {
 	padding: 8px 12px;
 	-webkit-appearance: none;
 }
+
 input[type=text]:focus, textarea:focus {
 	border: 1px solid $color-border-focus;
 }
+
 .button {
 	@include type-display();
 
@@ -88,24 +96,30 @@ input[type=text]:focus, textarea:focus {
 	cursor: pointer;
 	-webkit-appearance: none;
 }
+
 .button:hover {
 	background: #222;
 }
+
 .button:active {
 	background: #000;
 	color: #aaa;
 }
+
 label.selector {
 	display: block;
 	margin-bottom: 8px;
 }
+
 ::selection {
 	background: $color-highlight;
 	color: #ffffff;
 }
+
 .hide {
 	display: none;
 }
+
 .show {
 	display: block;
 }
@@ -136,6 +150,7 @@ label.selector {
 			top: -9px;
 		}
 	}
+
 	#nav-left {
 		position: absolute;
 		right: calc(50% + 98px);
@@ -148,6 +163,7 @@ label.selector {
 			margin-left: 32px;
 		}
 	}
+
 	#nav-right {
 		position: absolute;
 		left: calc(50% + 98px);
@@ -159,6 +175,7 @@ label.selector {
 			margin-right: 32px;
 		}
 	}
+
 	#nav-left a, #nav-right a {
 		color:  $color-base;
 		font-family: 'Amatic SC', cursive;
@@ -182,6 +199,7 @@ label.selector {
 			opacity: 0;
 			transition: all 0.1s linear;
 		}
+
 		&.selected::after,
 		&:hover::after {
 			opacity: 1;
@@ -208,11 +226,13 @@ label.selector {
 	padding-top: 100%;
 	position: relative;
 }
+
 .home-info {
 	position: absolute;
 	text-align: center;
 	top: 50%;
 	left: 50%;
+	width: 100%;
 	transform: translateY(-50%) translateX(-50%);
 
 	h2 	{
@@ -229,6 +249,7 @@ label.selector {
 			&:hover {
 				opacity: 0.7;
 			}
+
 			&::after {
 				content: "";
 				width: 100%;
@@ -240,6 +261,7 @@ label.selector {
 				background-size: 100% 100%;
 			}
 		}
+
 		.dot {
 			font-size: 22px;
 			line-height: 22px;
@@ -249,6 +271,14 @@ label.selector {
 			color: $color-highlight;
 		}
 	}
+}
+
+.spin .main {
+	overflow: hidden;
+	position: relative;
+	max-width: 440px;
+	padding-top: 45px;
+	padding-bottom: calc(100% - 45px);
 }
 
 // Spin ------------------------------------------------------------------------
@@ -275,18 +305,18 @@ label.selector {
 
 .illustration-wrapper {
 	position: absolute;
-	top: 50%;
+	// top: 215px;
 	left: 50%;
 	width: $animation-circle-size;
 	height: $animation-circle-size;
-	margin-top: $animation-circle-size * -0.5;
+	// margin-top: $animation-circle-size * -0.5;
 	margin-left: $animation-circle-size * -0.5;
 }
 
 .illustrations,
 .illustrations-content {
 	position: absolute;
-	top: 0;
+	// top: 48px;
 	left: 0;
 	width: 100%;
 	height: 100%;
@@ -316,6 +346,7 @@ label.selector {
 	height: 70px;
 	margin-top: -35px;
 	margin-left: -35px;
+	transform: translateX(-100%) translateY(-100%);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: contain;
@@ -323,111 +354,22 @@ label.selector {
 	animation: anti-spin $animation-time linear infinite;
 }
 
-.illustration:nth-child(1) {
-	top: -3%;
-	left: 50%;
-	background-image: url("/assets/images/icon-pizza.jpg");
-}
-
-.illustration:nth-child(2) {
-	top: 1%;
-	left: 70.5%;
-	background-image: url("/assets/images/icon-pie.jpg");
-}
-
-.illustration:nth-child(3) {
-	top: 12.5%;
-	left: 87.1%;
-	background-image: url("/assets/images/icon-tea.jpg");
-}
-
-.illustration:nth-child(4) {
-	top: 30%;
-	left: 98.5%;
-	background-image: url("/assets/images/icon-croissant.jpg");
-}
-
-.illustration:nth-child(5) {
-	top: 50%;
-	left: 102.5%;
-	background-image: url("/assets/images/icon-banana.jpg");
-}
-
-.illustration:nth-child(6) {
-	top: 70%;
-	left: 98.5%;
-	background-image: url("/assets/images/icon-bun.jpg");
-}
-
-.illustration:nth-child(7) {
-	top: 87%;
-	left: 88%;
-	background-image: url("/assets/images/icon-dumpling.jpg");
-}
-
-.illustration:nth-child(8) {
-	top: 98.5%;
-	left: 70%;
-	background-image: url("/assets/images/icon-pretzel.jpg");
-}
-
-.illustration:nth-child(9) {
-	top: 102.5%;
-	left: 50%;
-	background-image: url("/assets/images/icon-cookie.jpg");
-}
-
-.illustration:nth-child(10) {
-	top: 98.5%;
-	left: 30%;
-	background-image: url("/assets/images/icon-bread.jpg");
-}
-
-.illustration:nth-child(11) {
-	top: 87%;
-	left: 13%;
-	background-image: url("/assets/images/icon-cake.jpg");
-}
-
-.illustration:nth-child(12) {
-	top: 70%;
-	left: 1.5%;
-	background-image: url("/assets/images/icon-bagel.jpg");
-}
-
-.illustration:nth-child(13) {
-	top: 50%;
-	left: -2.5%;
-	background-image: url("/assets/images/icon-meringue.jpg");
-}
-
-.illustration:nth-child(14) {
-	top: 29.5%;
-	left: 1%;
-	background-image: url("/assets/images/icon-lemon.jpg");
-}
-
-.illustration:nth-child(15) {
-	top: 12.5%;
-	left: 12.5%;
-	background-image: url("/assets/images/icon-cone.jpg");
-}
-
-.illustration:nth-child(16) {
-	top: 1%;
-	left: 30%;
-	background-image: url("/assets/images/icon-coffee.jpg");
-}
-
-.dot {
-	font-size: 22px;
-	line-height: 22px;
-	position: relative;
-	top: -4px;
-	padding: 4px;
-	color: $color-highlight;
-}
-
+.illustration:nth-child(1) { top: -3%; left: 50%; background-image: url("/assets/images/icon-pizza.jpg"); }
+.illustration:nth-child(2) { top: 1%; left: 70.5%; background-image: url("/assets/images/icon-pie.jpg"); }
+.illustration:nth-child(3) { top: 12.5%; left: 87.1%; background-image: url("/assets/images/icon-tea.jpg"); }
+.illustration:nth-child(4) { top: 30%; left: 98.5%; background-image: url("/assets/images/icon-croissant.jpg"); }
+.illustration:nth-child(5) { top: 50%; left: 102.5%; background-image: url("/assets/images/icon-banana.jpg"); }
+.illustration:nth-child(6) { top: 70%; left: 98.5%; background-image: url("/assets/images/icon-bun.jpg"); }
+.illustration:nth-child(7) { top: 87%; left: 88%; background-image: url("/assets/images/icon-dumpling.jpg"); }
+.illustration:nth-child(8) { top: 98.5%; left: 70%; background-image: url("/assets/images/icon-pretzel.jpg"); }
+.illustration:nth-child(9) { top: 102.5%; left: 50%; background-image: url("/assets/images/icon-cookie.jpg"); }
+.illustration:nth-child(10) { top: 98.5%; left: 30%; background-image: url("/assets/images/icon-bread.jpg"); }
+.illustration:nth-child(11) { top: 87%; left: 13%; background-image: url("/assets/images/icon-cake.jpg"); }
+.illustration:nth-child(12) { top: 70%; left: 1.5%; background-image: url("/assets/images/icon-bagel.jpg"); }
+.illustration:nth-child(13) { top: 50%; left: -2.5%; background-image: url("/assets/images/icon-meringue.jpg"); }
+.illustration:nth-child(14) { top: 29.5%; left: 1%; background-image: url("/assets/images/icon-lemon.jpg"); }
+.illustration:nth-child(15) { top: 12.5%; left: 12.5%; background-image: url("/assets/images/icon-cone.jpg"); }
+.illustration:nth-child(16) { top: 1%; left: 30%; background-image: url("/assets/images/icon-coffee.jpg"); }
 
 // RSVP ------------------------------------------------------------------------
 
@@ -454,6 +396,7 @@ label.selector {
 			left: auto;
 			right: auto;
 			top: 115px;
+			
 			a {
 				float: none;
 				display: inline-block;
@@ -461,19 +404,59 @@ label.selector {
 				margin: 0 16px;
 			}
 		}
-		#nav-left { flex-direction: row-reverse; }
-		#nav-right { top: 165px; }
+
+		#nav-left { 
+			flex-direction: row-reverse;
+		}
+
+		#nav-right {
+			top: 165px;
+		}
 	}
+	
 	.main {
 		margin-top: 170px;
 	}
+
+	.spin .main {
+		margin-top: 150px;
+	}
+
 }
-@media (max-width: 370px) {
-	.hero-home h2 {
-		font-size: 10vw;
+
+@media (max-width: 500px) {
+	.illustration-wrapper { 
+		width: 70vw;
+		height: 70vw;
+		margin-left: -35vw;
+	}
+	.illustration { 
+		width: 13vw;
+		height: 13vw;
+		margin-top: -6.5vw;
+		margin-left: -6.5vw;
+	}
+	.home-info h2 {
+		font-size: 8vw;
+		line-height: 1.35;
+	}
+
+	.main {
+		margin-top: 160px;
+	}
+
+	.spin .main {
+		margin-top: 140px;
+	}
+}
+
+@media (max-width: 400px) {
+	.home-info h2 {
+		font-size: 8.5vw;
 		line-height: 1.35;
 	}
 }
+
 @media (max-width: 320px) {
 	#nav a {
 		font-size: 8vw !important;
