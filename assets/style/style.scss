@@ -10,9 +10,6 @@ $color-border-focus: #777777;
 $font-body: "Puritan", sans-serif;
 $font-display:'Amatic SC', cursive;
 
-$animation-time: 40000ms;
-$animation-circle-size: 350px;
-
 @mixin type-base {
 	font-family: $font-body;
 	font-size: 16px;
@@ -32,6 +29,7 @@ $animation-circle-size: 350px;
 
 body {
 	@include type-base();
+	-webkit-text-size-adjust: 100%;
 }
 
 h1, h2, h3, h4, h5, .h2 {
@@ -134,82 +132,81 @@ label.selector {
 #nav {
 	height: 90px;
 	margin: 0 auto;
+}
+#nav-logo {
+	font-family: $font-display;
+	font-size: 64px;
+	position: absolute;
+	width: 100px;
+	height: 90px;
+	line-height: 60px;
+	letter-spacing: 7px;
+	text-align: center;
+	left: calc(50% - 2px);
+	top: 28px;
+	transform: translateX(-50%);
 
-	#nav-logo {
-		font-family: $font-display;
-		font-size: 64px;
-		position: absolute;
-		width: 100px;
-		height: 90px;
-		line-height: 60px;
-		letter-spacing: 7px;
-		text-align: center;
-		left: calc(50% - 2px);
-		top: 28px;
-		transform: translateX(-50%);
-
-		.logo-amp {
-			color: $color-highlight;
-			font-size: 38px;
-			position: relative;
-			top: -9px;
-		}
-	}
-
-	#nav-left {
-		position: absolute;
-		right: calc(50% + 98px);
-		top: 50px;
-		text-align: right;
-
-		a {
-			display: block;
-			float: right;
-			margin-left: 32px;
-		}
-	}
-
-	#nav-right {
-		position: absolute;
-		left: calc(50% + 98px);
-		top: 50px;
-		text-align: left;
-
-		a {
-			float: left;
-			margin-right: 32px;
-		}
-	}
-
-	#nav-left a, #nav-right a {
-		color:  $color-base;
-		font-family: 'Amatic SC', cursive;
-		letter-spacing: 2px;
-		font-size: 28px;
-		text-decoration: none;
-		border: none;
+	.logo-amp {
+		color: $color-highlight;
+		font-size: 38px;
 		position: relative;
-		opacity: 1;
+		top: -9px;
+	}
+}
+
+#nav-left {
+	position: absolute;
+	right: calc(50% + 98px);
+	top: 50px;
+	text-align: right;
+
+	a {
 		display: block;
+		float: right;
+		margin-left: 32px;
+	}
+}
 
-		&::after {
-			content: "";
-			width: 100%;
-			height: 3px;
-			display: block;
-			position: absolute;
-			bottom: -7px;
-			background-image: url("/assets/images/highlight.png");
-			background-size: 100% 100%;
-			opacity: 0;
-			transition: all 0.1s linear;
-		}
+#nav-right {
+	position: absolute;
+	left: calc(50% + 98px);
+	top: 50px;
+	text-align: left;
 
-		&.selected::after,
-		&:hover::after {
-			opacity: 1;
-			transition: all 0.05s linear;
-		}
+	a {
+		float: left;
+		margin-right: 32px;
+	}
+}
+
+#nav-left a, #nav-right a {
+	color:  $color-base;
+	font-family: 'Amatic SC', cursive;
+	letter-spacing: 2px;
+	font-size: 28px;
+	text-decoration: none;
+	border: none;
+	position: relative;
+	opacity: 1;
+	display: block;
+
+	&::after {
+		content: "";
+		width: 100%;
+		height: 3px;
+		display: block;
+		position: absolute;
+		bottom: -7px;
+		background-image: url("/assets/images/highlight.png");
+		background-size: 100% 100%;
+		opacity: 0;
+		transition: all 0.1s linear;
+	}
+
+	&.selected::after,
+	&:hover::after {
+		opacity: 1;
+		transition: all 0.05s linear;
 	}
 }
 
@@ -220,15 +217,19 @@ label.selector {
 	margin: 80px auto;
 	padding: 0 24px;
 }
+.main img {
+	max-width: 100%;
+}
 
 // Home ------------------------------------------------------------------------
 
 .spin .main {
 	overflow: hidden;
 	position: relative;
-	max-width: 440px;
+	max-width: 500px;
 	padding-top: 45px;
-	padding-bottom: calc(100% - 45px);
+	padding-bottom: 455px;
+	// padding-bottom: calc(100% - 45px);
 }
 
 .home-info {
@@ -243,41 +244,44 @@ label.selector {
 		font-size: 40px;
 		line-height: 54px;
 		margin: 0;
+	}
 
-		a {
-			color: $color-highlight;
-			border: 0;
-			display: inline-block;
-			position: relative;
+	a {
+		color: $color-highlight;
+		border: 0;
+		display: inline-block;
+		position: relative;
 
-			&:hover {
-				opacity: 0.7;
-			}
-
-			&::after {
-				content: "";
-				width: 100%;
-				height: 3px;
-				display: block;
-				position: absolute;
-				bottom: 1px;
-				background-image: url("/assets/images/highlight.png");
-				background-size: 100% 100%;
-			}
+		&:hover {
+			opacity: 0.7;
 		}
 
-		.dot {
-			font-size: 22px;
-			line-height: 22px;
-			position: relative;
-			top: -4px;
-			padding: 4px;
-			color: $color-highlight;
+		&::after {
+			content: "";
+			width: 100%;
+			height: 3px;
+			display: block;
+			position: absolute;
+			bottom: 1px;
+			background-image: url("/assets/images/highlight.png");
+			background-size: 100% 100%;
 		}
+	}
+
+	.dot {
+		font-size: 22px;
+		line-height: 22px;
+		position: relative;
+		top: -4px;
+		padding: 4px;
+		color: $color-highlight;
 	}
 }
 
 // Illustration Animation
+
+$animation-time: 40000ms;
+$animation-circle-size: 400px;
 
 @keyframes outer-spin {
 	0% {
@@ -418,7 +422,7 @@ label.selector {
 
 }
 
-@media (max-width: 500px) {
+@media (max-width: 560px) {
 	.illustration-wrapper { 
 		width: 70vw;
 		height: 70vw;
@@ -437,10 +441,13 @@ label.selector {
 
 	.main {
 		margin-top: 160px;
+		// margin-bottom: 60px;
 	}
 
 	.spin .main {
 		margin-top: 140px;
+		padding-bottom: 80vw;
+		margin-bottom: 40px;
 	}
 }
 

@@ -46,6 +46,16 @@
 			</label>
 			<span>Check out the <a href="/schedule">schedule</a> for more info about each day.</span>
 
+			<label class="h2" for="field_rvsp">Are you interested in staying on-site?</label>
+			<label class="selector">
+				<input type="radio" name="field_rsvp" value="Yes" />
+				<span>Yes</span>
+			</label>
+			<label class="selector">
+				<input type="radio" name="field_rsvp" value="No" />
+				<span>No</span>
+			</label>
+
 
 			<label class="h2" for="field_diet">Dietary restrictions (optional)</label>
 			<input type="text" name="field_diet" />

@@ -37,10 +37,10 @@
 		<h2>Sunday 7/12</h2>
 		<p>
 			<strong>Brunch / Lunch</strong><br>
-			Rise and shine. Come eat and hang out with us before you go. There will be a Chinese roast pig 燒豬, as well as other non-pig things to eat (like fruit, bagels, eggs, coffee, tea, maybe some croissants).
+			Rise and shine. Come eat and hang out with us before you go.
 		</p>
 		<p>
-			<strong>When:</strong> 11:00am - 1:30pm<br>
+			<strong>When:</strong> 10:30am - 1:00pm<br>
 			<strong>Where:</strong> Friendly Crossways<br>
 			<strong>Wear:</strong> Also super casual
 		</p>

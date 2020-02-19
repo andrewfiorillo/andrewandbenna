@@ -12,7 +12,28 @@
 	<? include("include/nav.php") ?>
 	
 	<div class="main">
-		<div id="map" style="width:100%;height:350px;"></div>
+	<h2>The Venue</h2>
+		<img src="/assets/images/fc/hero.jpg" alt=""><br><br>
+		<!-- <div id="map" style="width:100%;height:350px;"></div><br> -->
+		<p>
+			<strong>Friendly Crossways</strong><br>
+			247 Littleton County Rd</br>
+			Harvard, MA 01451<br>
+			<a href="">Map it</a>
+		</p>
+		<p><a href="https://www.friendlycrossways.com/" target="_blank">Friendly Crossways</a> is a family owned retreat center located 30 miles northwest of Boston in the rural town of Harvard.</p>
+
+		<h2>Getting Here</h2>
+		<!-- <div id="map" style="width:100%;height:350px;"></div><br> -->
+		<p>
+			<strong>Trains from Boston</strong><br>
+			There are commuter trains that run go from Boston to a station nearby the venue. If you get there, I'm sure we can arrange for someone to pick you up from that station. If you're flying in, you'll first have get yourself into 
+		</p>
+		<p>
+			<strong>Ride-Sharing Apps</strong><br>
+			don't feel like navigating public transportation, this is a good bet. If you're not driving yourself, this is almost certainly the easiest and fastest option. Taking Lyft or Uber from Boston or the Boston airport should run you $40-$60, and take around 40 minutes. 
+		</p>
+		<!-- <div id="map" style="width:100%;height:350px;"></div> -->
 	</div>
 	<script type="text/javascript">
 		function initMap() {
