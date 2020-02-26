@@ -2,13 +2,12 @@
 <head>
 	<?
 		$page = "rsvp";
-		$page_title = "RSVP";
+		$page_title = "RSVP";	
+		include("include/header.php");
 	?>
-		
-	<? include("include/header.php") ?>
 </head>
 <body>
-	
+
 	<? include("include/nav.php") ?>
 	
 	<div class="main">
@@ -17,11 +16,11 @@
 
 		<form name="form_rsvp" id="form-rsvp">
 
-			<label class="h2" for="field_names">Your full names</label>
+			<label class="h2" for="field_names">your full names</label>
 			<textarea name="field_names" rows="3"></textarea>
 
 			
-			<label class="h2" for="field_rvsp">Are you coming?</label>
+			<label class="h2" for="field_rvsp">are you coming?</label>
 			<label class="selector">
 				<input type="radio" name="field_rsvp" value="Yes" />
 				<span>I will definitely 100% no take-backs be there.</span>
@@ -32,7 +31,8 @@
 			</label>
 
 
-			<label class="h2">Which events will you be attending?</label>
+			<label class="h2">which events will you be attending?</label>
+			<div class="info">Check out the <a href="/schedule">schedule</a> for more info about each day.</div>
 			<label class="selector">
 				<input type="checkbox" name="field_events_friday" />
 				<span>Friday Night Pizza Hangout</span>
@@ -44,20 +44,31 @@
 			<label class="selector">
 				<input type="checkbox" name="field_events_sunday" />Sunday Lunch
 			</label>
-			<span>Check out the <a href="/schedule">schedule</a> for more info about each day.</span>
 
-			<label class="h2" for="field_rvsp">Are you interested in staying on-site?</label>
+			<label class="h2" for="field_onsite">are you interested in staying on-site?</label>
+			<div class="info">More info about on-site lodging can be found <a href="/stay">here</a>.</div>
 			<label class="selector">
-				<input type="radio" name="field_rsvp" value="Yes" />
+				<input type="radio" name="field_onsite" value="Yes" />
 				<span>Yes</span>
 			</label>
 			<label class="selector">
-				<input type="radio" name="field_rsvp" value="No" />
+				<input type="radio" name="field_onsite" value="No" />
 				<span>No</span>
 			</label>
 
 
-			<label class="h2" for="field_diet">Dietary restrictions (optional)</label>
+			<label class="h2" for="field_transportation">will you have your own transportation?</label>
+			<label class="selector">
+				<input type="radio" name="field_transportation" value="Yes" />
+				<span>Yes</span>
+			</label>
+			<label class="selector">
+				<input type="radio" name="field_transportation" value="No" />
+				<span>No</span>
+			</label>
+
+
+			<label class="h2" for="field_diet">dietary restrictions (optional)</label>
 			<input type="text" name="field_diet" />
 
 
@@ -75,7 +86,7 @@
 		var error = document.querySelector(".error")
 		var main = document.querySelector(".main")
 		
-		submitButton.addEventListener("click", function() {
+		submitButton.addEventListener("click", () => {
 
 			var values = {
 				names: form.field_names.value,
@@ -83,10 +94,16 @@
 				field_events_friday: form.field_events_friday.checked ? "Yes" : "No",
 				field_events_saturday: form.field_events_saturday.checked  ? "Yes" : "No",
 				field_events_sunday: form.field_events_sunday.checked  ? "Yes" : "No",
+				field_onsite: form.field_onsite.value,
+				field_transportation: form.field_transportation.value,
 				field_diet: form.field_diet.value != "" ? form.field_diet.value : "None"
 			}
 			
-			if (values.rsvp && values.names != "") {
+			if (values.rsvp 
+				&& values.field_onsite 
+				&& values.field_transportation 
+				&& values.names != "") {
+
 				fetch("/mail", {
 					credentials: 'same-origin',
 					method: 'POST',
@@ -94,19 +111,20 @@
 					headers: new Headers({
 						'Content-Type': 'application/json'
 					}),
-				}).then(response => response.json()).then( data => {
+				}).then(response => response.json()).then(data => {
 					if (data.rsvp == "Yes") main.innerHTML = `
 						<div style="text-align:center;">Thanks for the response. Looking forward to seeing you!</div>
-					`;
-					else if (data.rsvp == "No") main.innerHTML = `"
+					`
+					else if (data.rsvp == "No") main.innerHTML = `
 						<div style="text-align:center;">Thanks for the response. You'll be missed!</div>
-					`;
+					`
 				})
+				
 			} else {
-				error.classList.remove("hide");
+				error.classList.remove("hide")
 			}
 			
-		});
+		})
 	</script>
 
 </body>

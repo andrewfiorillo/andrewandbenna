@@ -8,6 +8,8 @@ $rsvp = $input["rsvp"];
 $field_events_friday = $input['field_events_friday'];
 $field_events_saturday = $input['field_events_saturday'];
 $field_events_sunday = $input['field_events_sunday'];
+$field_onsite = $input['field_onsite'];
+$field_transportation = $input["field_transportation"];
 $field_diet = $input['field_diet'];
 
 
@@ -28,6 +30,16 @@ $rsvp
 Friday - $field_events_friday<br>
 Saturday - $field_events_saturday<br>
 Friday - $field_events_sunday
+<br>
+<br>
+
+<strong>Interested in Staying Onsite</strong><br>
+$field_onsite
+<br>
+<br>
+
+<strong>Interested in Staying Onsite</strong><br>
+$field_transportation
 <br>
 <br>
 

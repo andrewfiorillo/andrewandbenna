@@ -3,46 +3,53 @@
 	<?
 		$page = "schedule";
 		$page_title = "Schedule";
+		include("include/header.php");
 	?>
-		
-	<? include("include/header.php") ?>
 </head>
 <body>
 
 	<? include("include/nav.php") ?>
 	
 	<div class="main">
+
 		<h2>Friday 7/10</h2>
+
+		<h3>Pizza Party</h3>
+		<div class="info">If you're around Friday night and looking for company, we'd love to see you. We'll be hanging out at the venue for a few hours. We'll have a mobile pizza oven to serve you some super fresh pizza (including gluten free, dairy free, and vegan options).</div>
 		<p>
-			<strong>Pizza Party</strong><br>
-			If you're around Friday night and looking for company, we'd love to see you. We'll be hanging out at the venue for a few hours. We'll have a mobile pizza oven to serve you some super fresh pizza (including gluten free, dairy free, and vegan options).
-		</p>
-		<p>
-			<strong>When:</strong> 6:00pm - 9:00pm<br>
-			<strong>Where:</strong> Friendly Crossways<br>
-			<strong>Wear:</strong> Super casual<br>
+			When: 6:00pm - 9:00pm<br>
+			Where: Friendly Crossways<br>
+			Wear: Super casual<br>
 		</p>
 		
+
 		<h2>Saturday 7/11</h2>
+
+		<h3>Wedding</h3>
+		<div class="info">This is the important part. Benna and Andrew will say nice things to each other while everyone watches. Then we'll eat a bit. We'll drink. We'll eat some more. Many of us will dance. It'll be a grand old time.</div>
 		<p>
-			<strong>Wedding</strong><br>
-			This is the important part. Benna and Andrew will say nice things to each other while everyone watches. Then we'll eat a bit. We'll drink. We'll eat some more. Many of us will dance. It'll be a grand old time.
-		</p>
-		<p>
-			<strong>When:</strong> 5:00pm - 12:00am<br>
-			<strong>Where:</strong> Friendly Crossways<br>
-			<strong>Wear:</strong> Look decent, but don't stress it. Some people will be wearing suits and some people won't. It's summer. Stay cool. Oliver — you're welcome to wear that robe or gown or whatever it was you were talking about.
+			When: 5:00pm - 12:00am<br>
+			Where: Friendly Crossways<br>
+			Wear: Look decent, but don't stress it. Some people will be wearing suits and some people won't. It's summer. Stay cool. Oliver — you're welcome to wear that robe or gown or whatever it was you were talking about.
 		</p>
 
+
 		<h2>Sunday 7/12</h2>
+
+		<h3>Brunch</h3>
+		<div class="info">Rise and shine. Come eat and hang out with us before you go.</div>
 		<p>
-			<strong>Brunch / Lunch</strong><br>
-			Rise and shine. Come eat and hang out with us before you go.
+			When: 10:30am - 1:00pm<br>
+			Where: Friendly Crossways<br>
+			Wear: Loungewear
 		</p>
+
+		<h3>Afternoon at Kimball's</h3>
+		<div class="info">Are you sick of us yet? If not, come play games and eat ice cream with us at the locally famous Kimball's Farms.</div>
 		<p>
-			<strong>When:</strong> 10:30am - 1:00pm<br>
-			<strong>Where:</strong> Friendly Crossways<br>
-			<strong>Wear:</strong> Also super casual
+			When: 10:30am - 1:00pm<br>
+			Where: Kimball's Farms<br>
+			Wear: ¯\_(ツ)_/¯ 
 		</p>
 
 		<?

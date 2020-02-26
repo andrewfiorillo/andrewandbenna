@@ -3,9 +3,8 @@
 	<?
 		$page = "home";
 		$page_title = "Home";
+		include("include/header.php");
 	?>
-
-	<? include("include/header.php"); ?>
 </head>
 <body class="spin">
 
