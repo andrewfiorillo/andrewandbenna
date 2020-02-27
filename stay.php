@@ -15,16 +15,16 @@
 		<h2>on-site lodging</h2>
 
 		<p>
-			There are rooms available at the venue itself, and we’d love to get as many of you on-site as we can. It's inexpensive, and for obvious reasons, super convenient. It's more like staying in a house than a hotel. Some rooms are private and some are shared, with 1, 2, 3, or 4 or more beds in a room. There are plenty of bathrooms, but they are shared. So, if hanging out with us at this big old house sounds like a good time, we'd love to have you there. <? /* Check out some photos below, and let us know if you're interested! */ ?>
+			There are rooms available at the venue itself, and we’d love to get as many of you on-site as we can. It's inexpensive, and for obvious reasons, super convenient. It's more like staying in a house than a hotel. Some rooms are private and some are shared, with 1, 2, 3, or 4 or more beds in a room. There are plenty of bathrooms, but they are shared. So, if hanging out with us at this big old house sounds like a good time, we'd love to have you there. Check out some photos below, and let us know if you're interested!
 		</p>
 
 		<div class="gallery">
-			<a href="/assets/images/fc/fc-lodging-06.jpg"><img src="/assets/images/fc/fc-lodging-06.jpg" /></a>
-			<a href="/assets/images/fc/fc-lodging-05.jpg"><img src="/assets/images/fc/fc-lodging-05.jpg" /></a>
-			<a href="/assets/images/fc/fc-lodging-04.jpg"><img src="/assets/images/fc/fc-lodging-04.jpg" /></a>
-			<a href="/assets/images/fc/fc-lodging-03.jpg"><img src="/assets/images/fc/fc-lodging-03.jpg" /></a>
-			<a href="/assets/images/fc/fc-lodging-02.jpg"><img src="/assets/images/fc/fc-lodging-02.jpg" /></a>
-			<a href="/assets/images/fc/fc-lodging-01.jpg"><img src="/assets/images/fc/fc-lodging-01.jpg" /></a>
+			<a href="/assets/images/fc/fc-lodging-06.jpg"><img src="/assets/images/fc/fc-lodging-06-thumb.jpg" /></a>
+			<a href="/assets/images/fc/fc-lodging-05.jpg"><img src="/assets/images/fc/fc-lodging-05-thumb.jpg" /></a>
+			<a href="/assets/images/fc/fc-lodging-04.jpg"><img src="/assets/images/fc/fc-lodging-04-thumb.jpg" /></a>
+			<a href="/assets/images/fc/fc-lodging-03.jpg"><img src="/assets/images/fc/fc-lodging-03-thumb.jpg" /></a>
+			<a href="/assets/images/fc/fc-lodging-02.jpg"><img src="/assets/images/fc/fc-lodging-02-thumb.jpg" /></a>
+			<a href="/assets/images/fc/fc-lodging-01.jpg"><img src="/assets/images/fc/fc-lodging-01-thumb.jpg" /></a>
 		</div>
 
 		<h2>reserved hotels</h2>
