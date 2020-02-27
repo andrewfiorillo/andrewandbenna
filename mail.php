@@ -38,7 +38,7 @@ $field_onsite
 <br>
 <br>
 
-<strong>Interested in Staying Onsite</strong><br>
+<strong>Has Transportation</strong><br>
 $field_transportation
 <br>
 <br>
