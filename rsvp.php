@@ -94,9 +94,18 @@
 				field_events_friday: form.field_events_friday.checked ? "Yes" : "No",
 				field_events_saturday: form.field_events_saturday.checked  ? "Yes" : "No",
 				field_events_sunday: form.field_events_sunday.checked  ? "Yes" : "No",
-				field_onsite: form.field_rsvp.value == "Yes" ? form.field_onsite.value : "n/a",
-				field_transportation: form.field_rsvp.value == "Yes" ? form.field_transportation.value : "n/a",
+				field_onsite: form.field_onsite.value,
+				field_transportation: form.field_transportation.value,
 				field_diet: form.field_diet.value != "" ? form.field_diet.value : "None"
+			}
+
+			if (form.field_rsvp.value == "No") {
+				values.field_events_friday = "n/a"
+				values.field_events_saturday = "n/a"
+				values.field_events_sunday = "n/a"
+				values.field_onsite = "n/a"
+				values.field_transportation = "n/a"
+				values.field_diet = "na/a"
 			}
 			
 			if (values.rsvp 
