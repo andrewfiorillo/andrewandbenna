@@ -38,11 +38,11 @@
 				<span>Friday Night Pizza Hangout</span>
 			</label>
 			<label class="selector">
-				<input type="checkbox" name="field_events_saturday" checked disabled />
+				<input type="checkbox" name="field_events_saturday" checked />
 				<span>Saturday Wedding</span>
 			</label>
 			<label class="selector">
-				<input type="checkbox" name="field_events_sunday" />Sunday Lunch
+				<input type="checkbox" name="field_events_sunday" />Sunday Brunch
 			</label>
 
 			<label class="h2" for="field_onsite">are you interested in staying on-site?</label>
@@ -94,8 +94,8 @@
 				field_events_friday: form.field_events_friday.checked ? "Yes" : "No",
 				field_events_saturday: form.field_events_saturday.checked  ? "Yes" : "No",
 				field_events_sunday: form.field_events_sunday.checked  ? "Yes" : "No",
-				field_onsite: form.field_onsite.value,
-				field_transportation: form.field_transportation.value,
+				field_onsite: form.field_rsvp.value == "Yes" ? form.field_onsite.value : "n/a",
+				field_transportation: form.field_rsvp.value == "Yes" ? form.field_transportation.value : "n/a",
 				field_diet: form.field_diet.value != "" ? form.field_diet.value : "None"
 			}
 			
