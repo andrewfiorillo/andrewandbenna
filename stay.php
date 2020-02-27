@@ -73,7 +73,7 @@
 
 		<h3>Airbnb</h3>
 		<p>
-			Renting a home on <a href="https://www.airbnb.com/">Airbnb</a> could be a great option if you need a larger number of rooms, or just want more space for yourself. These are the towns within 30 minutes drive form the venue that we'd recommend looking in:
+			Renting a home on <a href="https://www.airbnb.com/">Airbnb</a> could be a great option if you need a larger number of rooms, or just want more space for yourself. These are the towns within 30 minutes drive from the venue that we'd recommend looking in:
 		</p>
 		<ul>
 			<li>Harvard (the town the venue is in)</li>

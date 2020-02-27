@@ -12,7 +12,7 @@
 	
 	<div class="main">
 
-		<p>Thanks for RSVPing. We’ve just got a few questions below that’ll help us plan everything out. If you’re confused, have any questions, or just want to chat, <a href="mailto:bennaandrew@gmail.com">get in touch</a>!</p>
+		<p>Thanks for RSVPing. We’ve just got a few questions below that’ll help us plan everything out. If you’re confused, have any questions, or just want to chat, get in touch!
 
 		<form name="form_rsvp" id="form-rsvp">
 
@@ -42,7 +42,7 @@
 				<span>Saturday Wedding</span>
 			</label>
 			<label class="selector">
-				<input type="checkbox" name="field_events_sunday" />Sunday Brunch
+				<input type="checkbox" name="field_events_sunday" /> Sunday Brunch
 			</label>
 
 			<label class="h2" for="field_onsite">are you interested in staying on-site?</label>

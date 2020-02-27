@@ -19,7 +19,7 @@
 		<p>
 			When: 6:00pm - 9:00pm<br>
 			Where: Friendly Crossways<br>
-			Wear: Super casual<br>
+			Wear: Super casual. Anything food-themed. You may find something at <a href="https://gofco.com/product-category/tracksuits/" target="_blank">getonfleek.com</a>.
 		</p>
 		
 
@@ -28,9 +28,9 @@
 		<h3>Wedding</h3>
 		<div class="info">This is the important part. Benna and Andrew will say nice things to each other while everyone watches. Then we'll eat a bit. We'll drink. We'll eat some more. Many of us will dance. It'll be a grand old time.</div>
 		<p>
-			When: 5:00pm - 12:00am<br>
+			When: 5:00pm - 11:00pm<br>
 			Where: Friendly Crossways<br>
-			Wear: Look decent, but don't stress it. Some people will be wearing suits and some people won't. It's summer. Stay cool. Oliver — you're welcome to wear that robe or gown or whatever it was you were talking about.
+			Wear: Some people would argue that weddings require a certain degree of formaility in attire. We're not those people. It's summer. Stay cool. Some people will be wearing suits and some people won't, and that's totally fine. Oliver — you're welcome to wear that robe or gown or whatever it was you were talking about.
 		</p>
 
 
@@ -41,27 +41,17 @@
 		<p>
 			When: 10:30am - 1:00pm<br>
 			Where: Friendly Crossways<br>
-			Wear: Loungewear
+			Wear: Brunchwear
 		</p>
 
 		<h3>Afternoon at Kimball's</h3>
-		<div class="info">Are you sick of us yet? If not, come play games and eat ice cream with us at the locally famous Kimball's Farms.</div>
+		<div class="info">Are you sick of us yet? If not, come play games and eat ice cream with us at the locally famous Kimball Farm.</div>
 		<p>
-			When: 10:30am - 1:00pm<br>
-			Where: Kimball's Farms<br>
+			When: 4:00pm - 7:00pm<br>
+			Where: Kimball Farm<br>
 			Wear: ¯\_(ツ)_/¯ 
 		</p>
 
-		<?
-		// <h2>Sunday 7/12 - Afternoon</h2>
-		// <p>
-		// <strong>What:</strong> More hanging out<br>
-		// 	Have you had enough of us yet? If not, we are going to a place nearby called Kimball Farms, where you can do things like drive bumper boats, hit golf balls, and eat fried oysters and ice cream. It's good wholesome fun.<br>
-		// 	<strong>When:</strong> 3:30pm - ?<br>
-		// 	<strong>Where:</strong> Kimball Farms<br>
-		// 	<strong>Wear:</strong> The wedding is technically over, so you'll have to make your own clothing choices now.
-		// </p>
-		?>
 	</div>
 	
 </body>

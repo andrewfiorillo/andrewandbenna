@@ -23,7 +23,7 @@
 			<a href="https://goo.gl/maps/U8xMCqBMvvNBqS1P8" target="_blank">Map it</a>
 		</p>
 		<p>
-			<a href="https://www.friendlycrossways.com/" target="_blank">Friendly Crossways</a> is a family owned retreat center located 30 miles northwest of Boston in the rural town of Harvard.
+			<a href="https://www.friendlycrossways.com/" target="_blank">Friendly Crossways</a> is a family owned retreat center located 30 miles northwest of Boston in the town of Harvard (no relation to the university).
 		</p>
 
 
@@ -34,7 +34,7 @@
 
 		<h3>Lyft and Uber from Boston</h3>
 		<p>
-			If you're not driving yourself, this is almost certainly the easiest and fastest option if you're coming from Boston or the airport. Taking Lyft or Uber from Boston or the Boston airport should run you $40-$60, and take around 40 minutes. 
+			If you're not driving yourself, this is almost certainly the easiest and fastest option if you're coming from Boston or the airport. Taking Lyft or Uber from Boston or Logan airport should run you $40-$60, and take around 40 minutes. 
 		</p>
 
 		<h3>Trains from Boston</h3>
