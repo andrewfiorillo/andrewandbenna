@@ -243,6 +243,7 @@ h2 + .info, .h2 + .info {
 	}
 }
 
+
  // Main ------------------------------------------------------------------------
 
 .main {
@@ -253,6 +254,7 @@ h2 + .info, .h2 + .info {
 .main img {
 	max-width: 100%;
 }
+
 
 // Home ------------------------------------------------------------------------
 
@@ -402,17 +404,52 @@ $animation-circle-size: 400px;
 .illustration:nth-child(15) { top: 12.5%; left: 12.5%; background-image: url("/assets/images/icon-cone.jpg"); }
 .illustration:nth-child(16) { top: 1%; left: 30%; background-image: url("/assets/images/icon-coffee.jpg"); }
 
+
 // RSVP ------------------------------------------------------------------------
 
 #form-rsvp .button {
 	margin-top: 40px;
 }
 
+
+// Lodging ---------------------------------------------------------------------
+
+.gallery {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: stretch;
+}
+
+.gallery > a {
+	display: block;
+	float: left;
+	width: calc((100% / 3) - 12px);
+	margin-right: 18px;
+	margin-bottom: 18px;
+	text-decoration: none;
+	border: none;
+
+	img {
+		display: block;
+	}
+}
+
+.gallery > a:hover {
+	border: none;
+}
+
+.gallery > a:nth-child(3n) {
+	margin-right: 0;
+}
+
+
 // Location --------------------------------------------------------------------
 
 .gm-style-cc {
 	display: none;
 }
+
 
 // Mobile ----------------------------------------------------------------------
 
@@ -481,6 +518,23 @@ $animation-circle-size: 400px;
 		margin-top: 140px;
 		padding-bottom: 80vw;
 		margin-bottom: 40px;
+	}
+
+	
+}
+
+@media (max-width: 400px) {
+	.gallery > a {
+		width: calc((100% / 2) - 12px);
+		margin-right: 18px;
+		margin-bottom: 18px;
+	}
+
+	.gallery > a:nth-child(3n) {
+		margin-right: 18px;
+	}
+	.gallery > a:nth-child(2n) {
+		margin-right: 0;
 	}
 }
 
