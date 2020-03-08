@@ -16,7 +16,7 @@
 
 		<form name="form_rsvp" id="form-rsvp">
 
-			<label class="h2" for="field_names">your full names</label>
+			<label class="h2" for="field_names">your full name(s)</label>
 			<textarea name="field_names" rows="3"></textarea>
 
 			
