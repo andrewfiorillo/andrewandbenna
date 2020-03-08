@@ -50,9 +50,9 @@ $field_diet
 
 $to = 'bennaandrew@gmail.com';
 $subject = "$rsvp - $names";
-$headers = 'From: RSVP <mail@andrewandbenna.com>' . "\r\n" .
+$headers = 'From: RSVP <noreply@andrewandbenna.com>' . "\r\n" .
 			'Content-type: text/html; charset=iso-8859-1' . "\r\n" .
-			'Reply-To: mail@andrewandbenna.com' . "\r\n" .
+			'Reply-To: noreply@andrewandbenna.com' . "\r\n" .
 			'X-Mailer: PHP/' . phpversion();
 
 mail($to, $subject, $message, $headers);
