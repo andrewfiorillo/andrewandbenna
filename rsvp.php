@@ -17,8 +17,10 @@
 		<form name="form_rsvp" id="form-rsvp">
 
 			<label class="h2" for="field_names">your full name(s)</label>
-			<textarea name="field_names" rows="3"></textarea>
+			<textarea name="field_names" rows="2"></textarea>
 
+			<label class="h2" for="field_email">Email Address(es)</label>
+			<textarea name="field_email" rows="2"></textarea>
 			
 			<label class="h2" for="field_rvsp">are you coming?</label>
 			<label class="selector">
@@ -29,7 +31,6 @@
 				<input type="radio" name="field_rsvp" value="No" />
 				<span>I will not be there.</span>
 			</label>
-
 
 			<label class="h2">which events will you be attending?</label>
 			<div class="info">Check out the <a href="/schedule">schedule</a> for more info about each day.</div>
@@ -67,10 +68,8 @@
 				<span>No</span>
 			</label>
 
-
 			<label class="h2" for="field_diet">dietary restrictions (optional)</label>
 			<input type="text" name="field_diet" />
-
 
 			<div class="error hide" style="color: #E00C32;"><br>Hold up. Looks like you forgot something.</div>
 			<input id="rsvp-submit" name="submit" class="button" type="button" value="submit">
@@ -90,6 +89,7 @@
 
 			var values = {
 				names: form.field_names.value,
+				field_email: form.field_email.value,
 				rsvp: form.field_rsvp.value,
 				field_events_friday: form.field_events_friday.checked ? "Yes" : "No",
 				field_events_saturday: form.field_events_saturday.checked  ? "Yes" : "No",

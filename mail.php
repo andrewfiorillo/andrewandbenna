@@ -4,6 +4,7 @@
 $input = json_decode(file_get_contents('php://input'), true);
 
 $names = $input["names"];
+$field_email = $input["field_email"];
 $rsvp = $input["rsvp"];
 $field_events_friday = $input['field_events_friday'];
 $field_events_saturday = $input['field_events_saturday'];
@@ -18,6 +19,11 @@ $field_diet = $input['field_diet'];
 $message = "
 <strong>Names</strong><br>
 $names
+<br>
+<br>
+
+<strong>Email Address(es)</strong><br>
+$field_email
 <br>
 <br>
 
