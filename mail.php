@@ -35,7 +35,7 @@ $rsvp
 <strong>Events</strong><br>
 Friday - $field_events_friday<br>
 Saturday - $field_events_saturday<br>
-Friday - $field_events_sunday
+Sunday - $field_events_sunday
 <br>
 <br>
 
