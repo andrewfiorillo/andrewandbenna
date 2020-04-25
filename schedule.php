@@ -12,7 +12,7 @@
 	
 	<div class="main">
 
-		<h2>Friday 7/10</h2>
+		<h2>Friday 10/23</h2>
 
 		<h3>Pizza Party</h3>
 		<div class="info">If you're around Friday night and looking for company, we'd love to see you. We'll be hanging out at the venue for a few hours. We'll have a mobile pizza oven to serve you some super fresh pizza (including gluten free, dairy free, and vegan options).</div>
@@ -23,18 +23,18 @@
 		</p>
 		
 
-		<h2>Saturday 7/11</h2>
+		<h2>Saturday 10/24</h2>
 
 		<h3>Wedding</h3>
 		<div class="info">This is the important part. Benna and Andrew will say nice things to each other while everyone watches. Then we'll eat a bit. We'll drink. We'll eat some more. Many of us will dance. It'll be a grand old time.</div>
 		<p>
 			When: 5:00pm - 11:00pm<br>
 			Where: Friendly Crossways<br>
-			Wear: Some people would argue that weddings require a certain degree of formaility in attire. We're not those people. It's summer. Stay cool. Some people will be wearing suits and some people won't, and that's totally fine. Oliver — you're welcome to wear that robe or gown or whatever it was you were talking about.
+			Wear: Some people would argue that weddings require a certain degree of formaility in attire. We're not those people. Some people will be wearing suits and some people won't, and that's totally fine. Oliver — you're welcome to wear that robe or gown or whatever it was you were talking about.
 		</p>
 
 
-		<h2>Sunday 7/12</h2>
+		<h2>Sunday 10/25</h2>
 
 		<h3>Brunch</h3>
 		<div class="info">Rise and shine. Come eat and hang out with us before you go.</div>

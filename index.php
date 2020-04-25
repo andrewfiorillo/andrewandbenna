@@ -34,7 +34,7 @@
 		
 			<div class="illustrations-content">
 				<div class="home-info">
-					<h2>7<span class="dot">•</span>11<span class="dot">•</span>2020</h2>
+					<h2>10<span class="dot">•</span>24<span class="dot">•</span>2020</h2>
 					<h2>Harvard, MA</h2>
 					<h2><a href="/rsvp">rsvp</a></h2>
 				</div>
