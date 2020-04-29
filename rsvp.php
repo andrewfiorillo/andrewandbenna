@@ -47,7 +47,7 @@
 			</label>
 
 			<label class="h2" for="field_onsite">are you interested in staying on-site?</label>
-			<div class="info">More info about on-site lodging can be found <a href="/stay">here</a>. First come, first serve. If you are interested, we'll get in touch with more details.</div>
+			<div class="info">More info about on-site lodging can be found <a href="/stay">here</a>.</div>
 			<label class="selector">
 				<input type="radio" name="field_onsite" value="Yes" />
 				<span>Yes</span>

@@ -15,7 +15,7 @@
 		<h2>on-site lodging</h2>
 
 		<p>
-			There are rooms available at the venue itself, and we’d love to get as many of you on-site as we can. It's inexpensive, and for obvious reasons, super convenient. It's more like staying in a house than a hotel. Some rooms are private and some are shared, with 1, 2, 3, or 4 or more beds in a room. There are plenty of bathrooms, but they are shared. So, if hanging out with us at this big old house sounds like a good time, we'd love to have you there. Check out some photos below to get a better idea. It's first come first serve, so tell us if you're interested!
+			We can have a limited number of people stay with us at the venue. We’d love to get as many of you on-site as we can. It's free, and for obvious reasons, super convenient. Heres the rub: most rooms have four or more beds and you would most likely share a room with other guests. We're working our best to group people who know each other or would prefer to bunk together. So, if hanging out with us at this big old house sounds like a good time, we'd love to have you there. Check out some photos below to get a better idea. Note: there's no formal reservation process through the venue, so tell us if you're interested and we'll contact you with the details. First come, first served.
 		</p>
 
 		<div class="gallery">
