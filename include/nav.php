@@ -4,7 +4,7 @@
 		<a <?= $page == 'schedule' ? 'class="selected"' : '' ?> href="/schedule" >schedule</a>
 		<a <?= $page == 'home' ? 'class="selected"' : '' ?> href="/">home</a>
 	</div>
-	<div id="nav-logo">
+	<div id="nav-logo" onclick="window.location.href = '/';">
 		<span class="logo-a">A</span><span class="logo-amp">&</span><span class="logo-b">B</span>
 	</div>
 	<div id="nav-right">
